@@ -1,0 +1,15 @@
+.search-bar {
+    display : flex;
+    height: 30px;
+    margin: 10px 0;
+}
+.add-text {
+    width: 75%;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+.add-submit {
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -61,7 +61,7 @@ class App extends React.Component{
         let store = this.db.transaction("todos", "readwrite").objectStore("todos");
         store.get(id).onsuccess = (event) => {
             let todo = event.target.result;
-            todo.completed = true;
+            todo.completed = !todo.completed;
             store.put(todo);
         };
     };
